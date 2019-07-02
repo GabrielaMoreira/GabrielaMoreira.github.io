@@ -1,0 +1,703 @@
+/* ---------------------------------------------------------- *
+ * 				CONFIGURAÇÕES BÁSICAS DA PÁGINA				  *
+ * ---------------------------------------------------------- */
+ *{
+	margin: 0px;
+	padding: 0px;
+ }
+ 
+ html{
+	margin: 0px;
+	padding: 0px;		
+	scroll-behavior: smooth ;
+}
+
+body{
+	margin: 0px;
+	padding: 0px;
+	height: 100%;
+    width: 100%;	
+	
+	font-family: monospace;
+	font-size: 18px;
+	color: black;
+	text-align: justify;	
+}
+/* ---------------------------------------------------------- *
+ * 				CONFIGURAÇÕES BÁSICA MAIN CORPO		  		  *
+ * ---------------------------------------------------------- */
+#body{
+	height: 100%;
+	width: 100%;
+	margin: 0px;
+	padding: 0px;	
+	
+	display: inline-block;
+	background-color: #222;
+	z-index: 1;	
+}
+
+aside, #nav_mobile{
+	width: 180px;
+	height: 100vh;
+	position: fixed;
+	
+	float: left;
+	border: solid 1px;
+	background-color: #565656;
+	overflow: auto;
+}
+
+#content{	
+	width: 100%-180px;
+	
+	float: rigth;
+	margin-left: 180px;
+	background-color: #333333;
+	color: white;	
+}
+
+#article_home, #article_about, #article_education, #article_skills, #article_portifolio, #article_contact{
+	position: relative;
+	width: 100%;	
+	min-height: 100vh;
+}
+
+#article_home h2, #article_about h2, #article_education h2, #article_skills h2, #article_portifolio h2, #article_contact h2{
+	padding-top: 2%;
+	padding-left: 2%;
+}
+
+#sec_about, #sec_education, #sec_skills, #sec_portifolio, #sec_contact{
+	width: 80%;
+	border: 8px double #999;	
+	background-color: #565656;
+	
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+}
+
+/* ---------------------------------------------------------- *
+ * 				CONFIGURAÇÕES PAGINA HOME			  		  *
+ * ---------------------------------------------------------- */
+#article_home{
+	background: url(../docs_image/background/bg_home5.jpg) no-repeat center center fixed;
+	background-size: cover;		
+}
+
+#box_home{	
+	height: 75vh;
+	width: 80%;		
+	
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	border: 8px double #999;
+	
+	text-shadow: 0px 0px 5px #333;
+}
+
+#txt_dinamic{
+	width: 500px;
+	margin-top: 30%;
+	
+	background-color: red;
+	border: 1px;
+}
+
+#txt_titulos{	
+	width: 90%;
+	position: absolute;
+	left: 10%;
+	top: 30%;
+}
+
+
+#box_home h1{	
+	font-size: 2.5em;	
+}
+
+
+#icon_social{		
+	position: absolute;
+	bottom: 3%;	
+	right: 2%;	
+}
+
+#curriculo{
+	position: absolute;
+	bottom: 3%;	
+	left: 2%;
+}
+
+#btn{
+	width: 140px;
+	padding: 8px;
+		
+	background-color: #222;
+	border: 1px solide #fff;
+	border-radius: 50px;
+	
+	cursor: pointer;	
+	box-shadow: 0 5px 0 #333;
+	text-align: center;
+}
+
+#curriculo a{
+	text-decoration: none;
+}
+
+#btn p{	
+	font-family: monospace;
+	font-size: 0.8em;
+	color: white;
+	letter-spacing: 2px;	
+}	
+
+#btn:hover{
+	background-color: #333;
+	box-shadow: 0 5px 0 #222;
+}
+
+#btn:active{
+	position: relative;
+	top: 5px;
+	box-shadow: none;
+}
+
+/* ---------------------------------------------------------- *
+ * 				CONFIGURAÇÕES PAGINA ABOUT			  		  *
+ * ---------------------------------------------------------- */
+ #about{
+	width: 100%;
+	display: flex;
+}
+
+#cont_pimage{
+	width: 32%;	
+}
+
+#cont_ptext{
+	width: 68%;
+	font-family: Bradley Hand, cursive;
+	font-size: 0.8em;	
+}
+
+#personal_image{
+	width: 200px;
+	height: 200px;
+	border-radius: 100%;
+	padding: 6%;
+	
+	position: relative;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+}
+
+#titulo, #subtitulo{
+	padding: 3% 8%;
+}
+
+#subtitulo{
+	padding-top: 0px;
+	font-size: 0.9em;
+}
+
+
+/* ---------------------------------------------------------- *
+ * 				CONFIGURAÇÕES PAGINA EDUCATION		  		  *
+ * ---------------------------------------------------------- */
+#medio, #tecno, #superior, #linguaEstrangeira{
+	margin: 2% 4% 2% 4%;
+	width: 85%;	
+}
+
+#linguaEstrangeira{
+	margin-bottom: 4%;
+}
+
+#quick_medio, #quick_tecno, #quick_superior, #quick_linguagem{
+	width: 100%;
+	letter-spacing: 2px;
+	padding: 2%;
+	
+	display: flex;
+	justify-content: space-between;
+	
+	border: 1px solid black;
+	background-color: #565656;
+	font-size: 0.9em;
+}
+
+#full_medio, #full_tecno, #full_superior, #full_linguagem{
+	width: 100%;
+	font-size: 1em;
+	border-top: 1px solid black;	
+	background-color: #fff;
+	border: 1px solid black;
+	
+	color: black;
+	font-size: 0.8em;
+	padding: 2%;
+	
+	display: none;
+	box-shadow: 0px 0px 5px #333;
+}
+/* ---------------------------------------------------------- *
+ * 				CONFIGURAÇÕES PAGINA SKILLS			  		  *
+ * ---------------------------------------------------------- */
+#tools, #language, #data{
+	margin: 2% 4% 2% 4%;
+	width: 85%;	
+}
+
+#data{
+	margin-bottom: 4%;
+}
+
+#quick_tools, #quick_language, #quick_database{
+	width: 100%;
+	letter-spacing: 2px;
+	padding: 2%;
+	
+	display: flex;
+	justify-content: space-between;
+	
+	border: 1px solid black;
+	background-color: #565656;
+	font-size: 0.9em;
+}
+
+#full_tools, #full_language, #full_database{
+	width: 100%;
+	font-size: 1em;
+	border-top: 1px solid black;	
+	background-color: #fff;
+	border: 1px solid black;
+	
+	color: black;
+	font-size: 0.8em;
+	padding: 2%;
+
+	display: none;
+}
+/* ---------------------------------------------------------- *
+ * 				CONFIGURAÇÕES BARRA SKILLS			  		  *
+ * ---------------------------------------------------------- */
+#full_tools ul, #full_language ul, #full_database ul{
+	list-style: none;	
+}
+
+#full_tools, #full_language, #full_database{
+	column-count: 2;
+}
+ 
+ .container{
+	width: 100%;
+	height: 5px;	
+	background-color: #A5907E;
+	border: solid 1px;
+}
+
+#word, #notepad{	
+	height: 5px;
+	width: 75%;
+	
+	background-color: #885A5A;
+	border-top-right-radius: 25px;
+	border-bottom-right-radius: 25px;
+}
+
+#powerPoint, #visio, #visualStudio, #cygwing, #netBeans, #cSharp{
+	height: 5px;
+	width: 65%;
+	
+	background-color: #F7C1BB;	
+	border-top-right-radius: 25px;
+	border-bottom-right-radius: 25px;
+}
+
+#publisher, #sway, #mac, #server, #developer, #javaScript{
+	height: 5px;
+	width: 15%;
+	
+	background-color: #F7C1BB;	
+	border-top-right-radius: 25px;
+	border-bottom-right-radius: 25px;
+}
+
+#git{
+	height: 5px;
+	width: 5%;
+	
+	background-color: #F7C1BB;	
+	border-top-right-radius: 25px;
+	border-bottom-right-radius: 25px;
+}
+
+#brackets, #windows, #excel{
+	height: 5px;
+	width: 45%;
+	
+	background-color: #F7C1BB;	
+	border-top-right-radius: 25px;
+	border-bottom-right-radius: 25px;
+}
+
+#google, #edge{
+	height: 5px;
+	width: 90%;
+	
+	background-color: #885A5A;	
+	border-top-right-radius: 25px;
+	border-bottom-right-radius: 25px;
+}
+
+#firefox, #explore, #oneDrive, #dropBox{
+	height: 5px;
+	width: 80%;
+	
+	background-color: #885A5A;	
+	border-top-right-radius: 25px;
+	border-bottom-right-radius: 25px;
+}
+
+#html, #css, #c{
+	height: 5px;
+	width: 50%;
+	
+	background-color: #885A5A;	
+	border-top-right-radius: 25px;
+	border-bottom-right-radius: 25px;
+}
+
+#skype, #photoshop, #java{
+	height: 5px;
+	width: 30%;
+	
+	background-color: #F7C1BB;	
+	border-top-right-radius: 25px;
+	border-bottom-right-radius: 25px;
+}
+/* ---------------------------------------------------------- *
+ * 				CONFIGURAÇÕES PAGINA PORTIFOLIO				  *
+ * ---------------------------------------------------------- */
+ #grid{
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+}
+
+.sample{
+	width: 45%;
+	padding-left: 2%;
+	padding-right: 2%;
+}
+
+video{
+	width: 100%;
+	border: 2px solid black;
+}
+
+/* ---------------------------------------------------------- *
+ * 				CONFIGURAÇÕES PAGINA CONTATO				  *
+ * ---------------------------------------------------------- */
+form{
+	width: 100%;
+	text-align: center;		
+}
+
+form p{
+	padding: 1.2%;
+}
+
+input, textarea{
+	font-size: 0.7em;
+	width: 50%;
+	padding: 1%;	
+}
+
+textarea{
+	height: 120px;
+}
+
+.enviar input{
+	height: 40px;
+	width: 20%;
+	
+	background-color: #565656;	
+	border-radius: 50px;
+	letter-spacing: 2px;
+	border: 1px solid black;
+	
+	cursor: pointer;
+}
+
+.enviar input:hover{
+	background-color:#222;
+	border: 1px solid black;
+	color: white;
+}
+/* ---------------------------------------------------------- *
+ * 				CONFIGURAÇÕES BARRA DE NAVEGAÇÃO			  *
+ * ---------------------------------------------------------- */
+#icon_mobile{
+	margin-top: 4%;
+	margin-left: 2%;
+	float: left;
+	position: fixed;
+	z-index: 3;
+}
+
+#icon_menu_open, #icon_menu_close{
+	display: none;
+}
+
+#nav_mobile{
+	margin: 0px;
+	z-index: 2;
+	display: none;
+}
+
+#nav_mobile, #nav_desktop{
+	margin: 0px;
+	padding:0px;
+	padding-top: 25vh;
+	list-style: none;
+	border-top: 1px solid;
+}
+
+#nav_mobile ul li:first-child, #nav_desktop ul li:first-child{
+	border-top: 1px solid;
+}
+
+#nav_mobile ul li, #nav_desktop ul li{
+	border-bottom: 1px solid;
+}
+
+#nav_mobile li a, #nav_desktop li a{
+	padding:5px 10px; 
+	display:block;
+	
+	color: black; 
+	text-decoration:none;
+	font-size: 17px;
+	letter-spacing: 2px;
+	text-align: center;
+}
+ 
+#nav_mobile li a:hover, #nav_desktop li a:hover{
+	background:#333; 
+	color:#fff;
+	
+	-webkit-box-shadow:0 3px 10px 0 #ccc;
+	-moz-box-shadow:0 3px 10px 0 #CCC; 
+	text-shadow:0px 0px 5px #fff;	 
+}
+#nav_desktop li ul{
+	background-color:#fff;	
+	display:none;
+}
+
+#nav_desktop ul li ul li a{
+	font-size: 14px;
+	text-align: left;
+	letter-spacing: 0px;
+}
+
+#nav_desktop li:hover ul{
+	display:block;	
+}
+#nav_desktop ul li ul li a:hover{
+	text-align: right;
+ }
+ 
+#nav_desktop ul li ul li:last-child{
+	border-bottom: none;
+ }
+
+ 
+/*  --------------------------------------------------------- *
+ * 			CONFIGURAÇÕES RESPONSIVIDADE MOBILE			  	  *
+ * ---------------------------------------------------------- */
+@media screen and (max-width: 1024px){
+	
+	#personal_image{		
+		height: 170px;
+		width: 170px;
+	}	
+}
+ 
+ @media screen and (max-width: 823px){
+	
+	aside{
+		display: none;
+	}
+	
+	#content{
+		margin-left: 0px;
+	}	
+	
+	#icon_social img{		
+		height: 24px;
+		width: 24px;
+	}
+	
+	#icon_social{		
+		right: 0%;	
+	}
+	
+	#nav_desktop{
+		display: none;		
+	}
+	
+	#nav_mobile{
+		display: block;
+		width: 0%;
+		visibility: hidden;
+	}
+	
+	#icon_menu_open{
+		display: block;
+	}
+		
+	#box_home h1{
+		font-size: 1.8em;
+	}
+
+	#box_home h3{
+		font-size: 0.8em;
+	}	
+}
+
+@media screen and (max-width: 768px){
+	
+	#icon_social img{	
+		height: 24px;
+		width: 24px;
+	}
+	
+	#btn{
+		width: 100px;
+		font-size: 0.6em;
+	}
+	
+	#icon_social{
+		right: 4%;
+	}
+	
+	#personal_image{		
+		height: 140px;
+		width: 140px;		
+	}
+}
+
+@media screen and (max-width: 728px){
+	
+	#quick_medio img, #quick_tecno img, #quick_superior img, #quick_linguagem img{
+		width: 16px;
+		height: 16px;
+	}
+	
+	#quick_medio h1, #quick_tecno h1, #quick_superior h1, #quick_linguagem h1{
+		font-size: 0.8em;
+	}
+	
+	#full_medio, #full_tecno, #full_superior, #full_linguagem{
+		font-size: 0.6em;
+	}	
+	
+	#quick_tools img, #quick_language img, #quick_database img{
+		width: 16px;
+		height: 16px;
+	}
+	
+	#quick_tools h1, #quick_language h1, #quick_database h1{
+		font-size: 0.8em;
+	}
+	
+	#full_tools, #full_language, #full_database{
+		font-size: 0.6em;
+	}
+}
+
+@media screen and (max-width: 500px){
+	
+	#box_home h1{
+		font-size: 1.3em;		
+	}
+		
+	#box_home h3{
+		font-size: 0.8em;		
+	}
+	
+	#icon_social{
+		bottom: 9%;
+		right: 4%;
+	}
+	
+	#curriculo{
+		left: unset !important;/*utilizado para comando abaixo*/
+		right: 4.5%; 
+	}
+	
+	#about{
+		display: block;
+	}
+	
+	#personal_image{		
+		height: 120px;
+		width: 120px;
+	}
+	
+	#grid{
+		display: block;
+	}
+	
+	.sample{
+		margin: 0 auto;
+		width: 100%;
+	}
+	
+	video{
+		width: 95%;
+	}
+
+	#cont_pimage, #cont_ptext{
+		width: 100%;
+		font-size: 0.7em;
+	}
+	
+	#personal_image{
+		left: 50%;
+		top: 0%;
+		transform: translate(-50%, 0%);
+	}
+	
+	input, textarea{
+		width: 65%;
+	}
+	
+	.enviar input{
+		width: 50%;
+		background-color:#222;
+		color: white;
+	}
+}
+
+
+@media screen and (max-width: 400px){
+	
+	#box_home h1{
+		font-size: 1.08em;		
+	}
+
+		
+	#box_home h3{
+		font-size: 0.68em;		
+	}
+}

@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang = "en">
+	<head>	
+		<meta charset = "UTF-8"/>
+		<meta name = "author" content = "Gabriela Moreira"/>
+		<link rel= "stylesheet" href= "docs_css/styles.css"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+		<script src="docs_javaScript/function.js"></script>
+		<title>PERSONAL PORTIFOLIO</title>		
+	</head>
+	
+	<body>	
+		<main id = "body">				
+		
+			<div id = "icon_mobile">
+				<span style="cursor: pointer" onclick = "openNav();">
+					<img id = "icon_menu_open" src = "docs_image/icon/014-menu.png"/>
+				</span>
+				<span style="cursor: pointer" onclick = "closeNav();">
+					<img id = "icon_menu_close" src = "docs_image/icon/out_button1.png"/>
+				</span>
+			</div>
+			
+			
+			<nav id = "nav_mobile">
+					<ul>
+						<li><a href = "#article_home"> HOME </a></li>
+						<li><a href = "#article_about"> SOBRE </a></li>
+						<li><a href = "#article_education"> EDUCAÇÃO </a></li>
+						<li><a href = "#article_skills"> COMPETÊNCIAS TÉCNICAS </a></li>
+						<li><a href = "#article_portifolio"> PORTIFOLIO </a></li>
+						<li><a href = "#article_contact"> CONTATO </a></li>
+					</ul>
+			</nav>
+		
+			<aside>				
+				<nav id = "nav_desktop">		
+					<ul>
+						<li><a href = "#article_home"> HOME </a></li>
+						<li><a href = "#article_about"> SOBRE </a></li>
+						<li><a href = "#article_education"> EDUCAÇÃO </a></li>
+						<li><a href = "#article_skills"> COMPETÊNCIAS TÉCNICAS </a>
+							<ul>
+								<li><a href = "#article_skills"> FERRAMENTAS </a>
+								<li><a href = "#article_skills"> LINGUAGENS </a>
+								<li><a href = "#article_skills"> BANCO DE DADOS </a>
+							</ul>
+						</li>
+						<li><a href = "#article_portifolio"> PORTIFOLIO </a></li>
+						<li><a href = "#article_contact"> CONTATO </a></li>
+					</ul>
+				</nav>
+			</aside>			
+			
+			
+			<main id = "content">
+			
+				<article id = "article_home">				
+					<div id = "box_home">
+					
+						<div id = "txt_titulos">
+							<h1> Olá, <br>
+								Eu sou uma 
+								<span class="txt-type" data-wait="3000" data-words='["Estudante", "Entusiasta", "Criativa"]'></span>
+							</h1>
+							<h3>Bem-Vindo ao meu Website</h3>
+						</div>
+						
+						<div id = "curriculo">
+							<a href= "docs_pdf/curriculo_2019.pdf" target = "_blank">
+								<div id = "btn">
+									<p>Baixar CV</p>
+								</div>
+							</a>
+						</div>
+						
+						<div id = "icon_social">							
+							<a href = "https://github.com/GabrielaMoreira" target = "_blank"><img src = "docs_image/icon/003-github.png"/></a>
+							<a href = "https://www.linkedin.com/in/gabriela-moreira-1a2b57185/" target = "_blank"><img src = "docs_image/icon/003-linkedin.png"/></a>
+							<a href = "#" target = "_blank"><img src = "docs_image/icon/004-twitter.png"/></a>
+							<a href = "#" target = "_blank"><img src = "docs_image/icon/006-instagram.png"/></a>
+						</div>
+					</div>				
+				</article>
+				
+				
+
+				<article id = "article_about">					
+					<section id = "sec_about">
+						<h2>SOBRE</h2>						
+							<div id="about">								
+								<div id = "cont_pimage">
+										<img id = "personal_image" src = "docs_image/background/edited.jpg"/>
+								</div>
+								
+								<div id = "cont_ptext">
+									<p id = "titulo">
+											Olá, meu nome é Gabriela Moreira.
+										<br>
+											Brasileira. Viajante postada. Aspirante a pianista.				
+									</p>
+									<p id = "subtitulo">
+										<br>
+											De Sorocaba, São Paulo. Aluna da Fatec-SO em Análise e Desenvolvimento de Sistemas.
+										<br>
+											Procuro sempre aprender a todo momento, desenvolver interessantes aplicações, manter-me resiliente e propor boas conversas e contatos.
+									</p>
+								</div>
+							</div>							
+					</section>
+				</article>
+			
+			
+			
+				<article id = "article_education">
+					<section id = "sec_education">
+						<h2>EDUCAÇÃO</h2>
+						
+						<div id = "medio">
+							<div id = "quick_medio">
+								<h1>ENSINO MEDIO</h1>							
+								<span style = "cursor: pointer" onclick = "openMedio();">
+									<img src ="docs_image/icon/015-more.png"/>
+								</span>
+							</div>
+							<div id = "full_medio">
+								<p>
+									Escola Municipal Leonor Pinto Thomaz
+									<br><br>
+									Curso: Ensino Médio Completo
+									<br>
+									Início: 2012 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Término: 2014
+									<br>
+									Sorocaba, SP - Brasil
+								</p>
+							</div>
+						</div>
+						
+						<div id = "tecno">
+							<div id = "quick_tecno">
+								<h1>ENSINO TECNOLOGICO</h1>						
+								<span style = "cursor: pointer" onclick = "openTecno();">
+									<img src ="docs_image/icon/015-more.png"/>
+								</span>
+							</div>
+							<div id = "full_tecno">
+								<p>
+									Escola Tecnica Estadual Fernando Prestes
+									<br><br>
+									Curso: Informática
+									<br>
+									Início: 2015 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Término: 2016
+									<br>
+									Sorocaba, SP - Brasil
+								</p>
+							</div>
+						</div>
+						
+						<div id = "superior">
+							<div id = "quick_superior">
+								<h1>ENSINO SUPERIOR</h1>						
+								<span style = "cursor: pointer" onclick = "openSuperior();">
+									<img src ="docs_image/icon/015-more.png"/>
+								</span>
+							</div>
+							<div id = "full_superior">	
+								<p>
+									Faculdade de Tecnologia do Estado de São Paulo (FATEC-SO)
+									<br><br>
+									Curso: Análise e Desenvolvimento de Sistemas
+									<br>
+									Início: 2017 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Término: 2020
+									<br>
+									Sorocaba, SP - Brasil
+								</p>
+							</div>
+						</div>
+						
+						<div id = "linguaEstrangeira">
+							<div id = "quick_linguagem">
+								<h1>LÍNGUAS ESTRANGEIRAS</h1>			
+								<span style = "cursor: pointer" onclick = "openLinguagem();">
+									<img src ="docs_image/icon/015-more.png"/>
+								</span>
+							</div>
+							<div id = "full_linguagem">
+								<p>
+									Centro Cultural Brasil Estados Unidos - CCBEU
+									<br><br>							Curso: Inglês						<br>
+									Início: 2013 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Término: 2016
+									<br>
+									Sorocaba, SP - Brasil
+								</p>
+							</div>
+						</div>
+						
+					</section>
+				</article>
+				
+				
+				
+				<article id = "article_skills">
+					<section id = "sec_skills">
+						<h2>COMPETÊNCIAS TÉCNICAS</h2>
+						
+						<div id = "tools">
+							<div id = "quick_tools">
+								<h1>FERRAMENTAS</h1>						
+								<span style = "cursor: pointer" onclick = "openTools();">
+									<img src ="docs_image/icon/015-more.png"/>
+								</span>
+							</div>
+							<div id = "full_tools">
+								<ul id = "system">
+									<li>
+										Windows
+										<div class = "container">	
+											<div id = "windows"></div>
+										</div>
+									</li>
+									<li>
+										Mac
+										<div class = "container">	
+											<div id = "mac"></div>
+										</div>
+									</li>
+								</ul>
+								<ul id = "office">
+									<li>
+										Word
+										<div class = "container">	
+											<div id = "word"></div>
+										</div>
+									</li>
+									<li>
+										Excel
+										<div class = "container">	
+											<div id = "excel"></div>
+										</div>
+									</li>
+									<li>
+										Power Point
+										<div class = "container">	
+											<div id = "powerPoint"></div>
+										</div>
+									</li>
+									<li>
+										Visio
+										<div class = "container">	
+											<div id = "visio"></div>
+										</div>
+									</li>
+									<li>
+										Publisher
+										<div class = "container">	
+											<div id = "publisher"></div>
+										</div>
+									</li>
+									<li>
+										Sway
+										<div class = "container">	
+											<div id = "sway"></div>
+										</div>
+									</li>							
+								</ul>
+								<ul id = "app">
+									<li>
+										NotePad++
+										<div class = "container">	
+											<div id = "notepad"></div>
+										</div>
+									</li>
+									<li>
+										Visual Studio
+										<div class = "container">	
+											<div id = "visualStudio"></div>
+										</div>
+									</li>
+									<li>
+										Brackets
+										<div class = "container">
+										<div id = "brackets"></div>
+										</div>
+									</li>
+									<li>
+										Cygwing64
+										<div class = "container">	
+											<div id = "cygwing"></div>
+										</div>
+									</li>
+									<li>
+										NetBeans
+										<div class = "container">	
+											<div id = "netBeans"></div>
+										</div>
+									</li>
+									<li>
+										Photoshop CC
+										<div class = "container">	
+											<div id = "photoshop"></div>
+										</div>
+									</li>
+								</ul>
+								<ul id = "nav">
+									<li>
+										Google Chrome
+										<div class = "container">	
+											<div id = "google"></div>
+										</div>
+									</li>
+									<li>
+										Firefox
+										<div class = "container">	
+											<div id = "firefox"></div>
+										</div>
+									</li>
+									<li>
+										Microsoft Edge
+										<div class = "container">	
+											<div id = "edge"></div>
+										</div>
+									</li>
+									<li>
+										Micorsoft explore
+										<div class = "container">	
+											<div id = "explore"></div>
+										</div>
+									</li>
+								</ul>
+								<ul id = "bkp">
+									<li>
+										OneDrive
+										<div class = "container">	
+											<div id = "oneDrive"></div>
+										</div>
+									</li>
+									<li>
+										DropBox
+										<div class = "container">	
+											<div id = "dropBox"></div>
+										</div>
+									</li>
+									<li>
+										Skype
+										<div class = "container">	
+											<div id = "skype"></div>
+										</div>
+									</li>
+									<li>
+										Git
+										<div class = "container">	
+											<div id = "git"></div>
+										</div>
+									</li>
+								</ul>								
+							</div>
+						</div>
+						
+						<div id = "language">
+							<div id = "quick_language">
+								<h1>LINGUAGENS</h1>						
+								<span style = "cursor: pointer" onclick = "openLanguage();">
+									<img src ="docs_image/icon/015-more.png"/>
+								</span>
+							</div>
+							<div id = "full_language">	
+								<ul id = "lang">
+									<li>
+										Language C
+										<div class = "container">							
+											<div id = "c"></div>
+										</div>
+									</li>
+									<li>
+										Language C#
+										<div class = "container">							
+											<div id = "cSharp"></div>
+										</div>
+									</li>
+									<li>
+										Java
+										<div class = "container">							
+											<div id = "java"></div>
+										</div>
+									</li>
+									<li>
+										Html5
+										<div class = "container">							
+											<div id = "html"></div>
+										</div>
+									</li>
+									<li>
+										CSS3
+										<div class = "container">							
+											<div id = "css"></div>
+										</div>
+									</li>
+									<li>
+										JavaScript
+										<div class = "container">	
+											<div id = "javaScript"></div>
+										</div>
+									</li>
+								</ul>								
+							</div>
+						</div>
+
+						<div id = "data">
+							<div id = "quick_database">
+								<h1>BANCO DE DADOS</h1>						
+								<span style = "cursor: pointer" onclick = "openBase();">
+									<img src ="docs_image/icon/015-more.png"/>
+								</span>
+							</div>
+							<div id = "full_database">						
+								<ul id = "manag">
+									<li>
+										Microsoft SQL Sever
+										<div class = "container">	
+											<div id = "server"></div>
+										</div>
+									</li>
+									<li>
+										Oracle SQL Developer
+										<div class = "container">
+											<div id = "developer"></div>
+										</div>
+									</li>							
+								</ul>								
+							</div>
+						</div>
+						
+					</section>
+				</article>
+				
+				
+				
+				<article id = "article_portifolio">
+					<section id = "sec_portifolio">
+						<h2>PORTIFOLIO</h2>
+						<div id = "grid">
+							<div class = "sample">
+								<video controls poster = "docs_image/poster/poster-Excel.jpg">
+									<source src="docs_video/TrabalhoFinal-Excel.mp4" type="video/mp4">
+									Desculpe! Seu navegador não suporta este video.  
+								</video>								
+								<p style = "text-align: center;">Projeto Controle Acadêmico em Excel</p>
+							</div>
+							
+							<div class = "sample">
+								<video controls poster="docs_image/poster/poster-CSharp.jpg">
+									<source src="docs_video/TrabalhoFinal-CSharp.mp4" type="video/mp4">
+									Desculpe! Seu navegador não suporta este video.  
+								</video>								
+								<p style = "text-align: center;">Projeto Cafeteria em C-Sharp</p>
+							</div>
+						</div>
+					</section>
+				</article>
+				
+				
+				
+				<article id = "article_contact">
+					<section id = "sec_contact">
+						<h2>CONTATO</h2>
+						<form name = "formulario_contato">
+							<p class = "name">
+								<input type="text" name = "nome" placeholder = "Informe Seu Nome" required = "required"/>
+							</p>
+							<p class = "mail">
+								<input type="email" name = "email" placeholder = "Informe Seu E-mail" required = "required"/>
+							</p>
+							<p class = "assunto">
+								<input type="text" name = "assunto" placeholder = "Informe o Assunto" required = "required"/>
+							</p>
+								
+							<p class = "mensagem">
+								<textarea name = "mensagem" placeholder = "Escreva sua mensagem" required = "required"></textarea>
+							</p>
+								
+							<p class = "enviar" onclick = "respEmail();">
+								<input type = "submit" name = "enviar" value = "ENVIAR"/>
+							</p>					
+						</form>		
+					</section>
+				</article>
+				
+			</main>
+		</main>
+	</body>
+</html>
